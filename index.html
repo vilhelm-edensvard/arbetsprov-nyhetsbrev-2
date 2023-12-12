@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <title>Anmälan till nyhetsbrev</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Anmälan till nyhetsbrev</h1>
+      <p>Anmäl dig till vårt nyhetsbrev.</p>
+
+      <h2>Personuppgifter</h2>
+      <div class="form-group">
+        <label for="name">Namn*</label>
+        <input id="name" name="name" type="text" value="" />
+        <div class="help-text">Skriv ditt för- och efternamn</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-post*</label>
+        <input id="email" name="email" type="email" value="" />
+      </div>
+
+      <h2>Områden</h2>
+
+      <div class="form-group">
+        <label for="areas">Välj ett eller fler områden</label>
+
+        <div style="display: flex; gap: 5px">
+          <select id="areas" name="areas" value=""></select>
+          <button id="add-area" title="Lägg till område">&plus;</button>
+        </div>
+      </div>
+
+      <div id="selected-areas" class="areas-grid"></div>
+
+      <div class="form-group">
+        <input type="submit" id="submit" name="submit" value="Skicka in" />
+      </div>
+
+      <div id="feedback" style="padding: 10px; font-size: 0.8rem"></div>
+    </div>
+    <script src="src/main.js" type="module"></script>
+  </body>
+</html>

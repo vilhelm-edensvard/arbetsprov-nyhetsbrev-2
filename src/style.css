@@ -1,0 +1,52 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 300px;
+}
+
+.help-text {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.areas-grid {
+  width: 300px;
+  border: 1px solid #999;
+}
+
+.added-area:nth-child(even) {
+  background: #dedede;
+}
+
+.added-area {
+  padding: 3px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.invalid-input {
+  border: 1px solid red;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-error {
+  color: red;
+}
